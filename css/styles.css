@@ -16,6 +16,10 @@
   text-decoration: none;
 }
 
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
+}
 /*START HEADER*/
 
 .header-logo {
@@ -82,6 +86,7 @@ h1 {
   letter-spacing: 0.06em;
   color: var(--light-color);
   background-color: var(--acent-color);
+  cursor: pointer;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -133,7 +138,7 @@ h1 {
 /*END MAIN SECTION*/
 
 /*START FOOTER*/
-.adres-link {
+.adress-link {
   font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 400;
@@ -151,6 +156,11 @@ h1 {
   letter-spacing: 0.03em;
   /*color: rgba(255, 255, 255, 0.6);*/
 }
+.adress:hover,
+.adress:focus {
+  color: var(--acent-color);
+}
+
 /*END FOOTER*/
 
 /*====================PORTFOLIO================*/
@@ -164,6 +174,7 @@ h1 {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--background-color-bnt-light);
+  cursor: pointer;
 }
 .btn-list:hover,
 .btn-list:focus {
