@@ -1,3 +1,12 @@
+:root {
+  --primary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Raleway", sans-serif;
+  --logo-text-color: #000000;
+  --primary-text-color: #212121;
+  --tittle-text-color: #757575;
+  --light-color: #ffffff;
+  --acent-color: #2196f3;
+}
 .list {
   list-style: none;
 }
@@ -8,29 +17,29 @@
 /*START HEADER*/
 
 .header-logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--acent-color);
 }
 .logo {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--logo-text-color);
 }
 .nav-list-link,
 .contact-mail {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .nav-list-link:hover,
 .contact-mail:hover,
@@ -38,15 +47,15 @@
 .contact-number:hover,
 .nav-list-link:focus,
 .contact-mail:focus {
-  color: #2196f3;
+  color: var(--acent-color);
 }
 .contact-number {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--tittle-text-color);
 }
 
 /*END HEADER*/
@@ -54,85 +63,85 @@
 /*START MAIN SECTION*/
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family) f;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* color: #ffffff; */
+  /* var(--light-color); */
 }
 .modal-btn {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3e8;
+  color: var(--light-color);
+  background-color: var(--acent-color);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: #188ce8;
 }
 .decisions-title {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-text-color) 1;
 }
 .decisions-text {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71x;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--tittle-text-color);
 }
 .about-title,
 .about-team-title {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .team-title {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-text-color);
 }
 .team-text {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--tittle-text-color);
 }
 /*END MAIN SECTION*/
 
 /*START FOOTER*/
 .adres-link {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color: #ffffff; */
+  /* color:var(--light-color) */
 }
 .mail-number-link {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--primary-font-family);
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
