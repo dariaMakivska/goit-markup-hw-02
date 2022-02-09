@@ -8,6 +8,12 @@
   --background-color-bnt-light: #f5f4fa;
   --background-color-btn-colored: #188ce8;
   --acent-color: #2196f3;
+  --background-color-text:#2F303A;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  color: var(--primary-text-color);
 }
 .list {
   list-style: none;
@@ -16,10 +22,6 @@
   text-decoration: none;
 }
 
-body {
-  font-family: var(--primary-font-family);
-  color: var(--primary-text-color);
-}
 /*START HEADER*/
 
 .header-logo {
@@ -38,9 +40,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--logo-text-color);
 }
-.nav-list-link,
-.contact-mail {
-  font-family: var(--primary-font-family);
+.nav-list-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,8 +55,8 @@ body {
 .contact-mail:focus {
   color: var(--acent-color);
 }
-.contact-number {
-  font-family: var(--primary-font-family);
+.contact-number,
+.contact-mail {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -68,18 +68,21 @@ body {
 
 /*START MAIN SECTION*/
 
-h1 {
-  font-family: var(--primary-font-family) f;
+.main-section{
+  background-color:var(--background-color-text) ;
+}
+
+.primary-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  /* var(--light-color); */
+  color:var(--light-color);/
 }
 .modal-btn {
-  font-family: var(--primary-font-family);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -93,7 +96,6 @@ h1 {
   background-color: var(--background-color-btn-colored);
 }
 .decisions-title {
-  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -102,16 +104,13 @@ h1 {
   color: var(--primary-text-color);
 }
 .decisions-text {
-  font-family: var(--primary-font-family);
-  font-weight: 400;
   font-size: 14px;
-  line-height: 1.71x;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
 .about-title,
 .about-team-title {
-  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
@@ -120,7 +119,6 @@ h1 {
   color: var(--primary-text-color);
 }
 .team-title {
-  font-family: var(--primary-font-family);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -128,8 +126,6 @@ h1 {
   color: var(--primary-text-color);
 }
 .team-text {
-  font-family: var(--primary-font-family);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -138,23 +134,25 @@ h1 {
 /*END MAIN SECTION*/
 
 /*START FOOTER*/
-.adress-link {
-  font-family: var(--primary-font-family);
+.section-footer{
+  background-color:var(--background-color-text)
+}
+
+.adress-list {
   font-style: normal;
-  font-weight: 400;
+}
+
+.adress-link {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  /* color:var(--light-color) */
+  color:var(--light-color);
 }
 .mail-number-link {
-  font-family: var(--primary-font-family);
-  font-weight: normal;
-  font-style: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  /*color: rgba(255, 255, 255, 0.6);*/
+  color: rgba(255, 255, 255, 0.6);
 }
 .adress:hover,
 .adress:focus {
@@ -167,7 +165,7 @@ h1 {
 
 /*START MAIN SECTION Portfolio*/
 .btn-list {
-  font-family: var(--primary-font-family);
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -178,11 +176,11 @@ h1 {
 }
 .btn-list:hover,
 .btn-list:focus {
+  font-family: inherit;
   background-color: var(--acent-color);
   color: var(--light-color);
 }
 .examples-title {
-  font-family: var(--primary-font-family);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -190,8 +188,6 @@ h1 {
   color: var(--primary-text-color);
 }
 .examples-text {
-  font-family: var(--primary-font-family);
-  font-weight: normal;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
