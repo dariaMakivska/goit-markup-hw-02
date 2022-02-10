@@ -137,7 +137,10 @@ body {
 .section-footer{
   background-color:var(--background-color-text)
 }
-
+.footer-logo{
+  
+  color: var(--light-color);
+}
 .adress-list {
   font-style: normal;
 }
