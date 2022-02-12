@@ -9,37 +9,45 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
 <body>
     <header class="header">
-        <a class=" logo link" href="index.html" lang="en"><span class="header-logo">Web</span>Studio</a>
-        <nav class="navigation">
-            <ul class="nav-list list">
-                <li class="nav-list-item">
-                    <a class=" nav-list-link link" href="index.html">Студия</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class=" nav-list-link link" href="portfolio.html">Портфолио</a>
-                </li>
-                <li class="nav-list-item">
+        <div class="container header-container">
+            <nav class="navigation">
+                <a class=" logo link" href="index.html" lang="en"><span class="header-logo">Web</span>Studio</a>
+                <ul class="nav-list list">
+                    <li class="nav-list-item">
+                        <a class=" nav-list-link link" href="index.html">Студия</a>
+                    </li>
+                    <li class="nav-list-item">
+                        <a class=" nav-list-link link active" href="portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="nav-list-item">
                     <a class=" nav-list-link link" href="/">Контакты</a>
-                </li>
-            </ul>
-        </nav>
-        <ul class="list">
-            <li>
-                <a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li>
-                <a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="contact-list">
+                <ul class="contacts list">
+                    <li>
+                        <a class="contact-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="contact-number link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
         <section class="portfolio">
+        <div class="container">
         <h1 hidden >Портфолио</h1>
         <ul class="list">
             <li>
@@ -123,9 +131,11 @@
                     </a>
                 </li>
         </ul>
+        </div>
         </section>
     </main>
     <footer class="section-footer" >
+        <div class="container">
         <a class="logo footer-logo link" href="index.html" lang="en"><span class="header-logo">Web</span>Studio</a>
         <address class="adress-list">
             <ul class="list">
@@ -140,7 +150,7 @@
                 </li>
             </ul>
         </address>
-    
+        </div>
     </footer>
 
 </body>
